@@ -19,7 +19,7 @@ Install FbHack with GitHub
 
 ```
 
-Unzip your file then host the project on a local server for your test, or host it on a shared hosting service or a VPS.
+Host the project on a local server for your test, or host it on a shared hosting service or a VPS.
 
 You can test and create your account [here](http://fb-hack.42web.io)
 
