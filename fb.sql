@@ -1,8 +1,8 @@
--- MySQL dump 10.17  Distrib 10.3.20-MariaDB, for debian-linux-gnu (x86_64)
+-- MariaDB dump 10.19  Distrib 10.6.11-MariaDB, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: fb
+-- Host: localhost    Database: fbHack
 -- ------------------------------------------------------
--- Server version	10.3.20-MariaDB-1
+-- Server version	10.6.11-MariaDB-1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -30,7 +30,7 @@ CREATE TABLE `FB_admin` (
   `role` varchar(255) NOT NULL,
   `surname` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,7 +39,7 @@ CREATE TABLE `FB_admin` (
 
 LOCK TABLES `FB_admin` WRITE;
 /*!40000 ALTER TABLE `FB_admin` DISABLE KEYS */;
-INSERT INTO `FB_admin` VALUES (2,'G4L1L30_m77','$2y$10$btaf2x0IP9m5srYgHTyE3u/rtE45sLZj4LDPAOXPHMokkHWn9eXau','2021-07-14 07:06:00','Administator','Hassane');
+INSERT INTO `FB_admin` VALUES (3,'admin','$2y$10$PPlkXp9Br1dFkgOTKAr4jel9Q9n/1xwLkspME/Bd0o6ZRg4EaEqWW','2022-12-28 10:19:31','admin','blakvghost');
 /*!40000 ALTER TABLE `FB_admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,7 +58,7 @@ CREATE TABLE `FB_info` (
   `ip` varchar(255) NOT NULL,
   `agent` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,6 @@ CREATE TABLE `FB_info` (
 
 LOCK TABLES `FB_info` WRITE;
 /*!40000 ALTER TABLE `FB_info` DISABLE KEYS */;
-INSERT INTO `FB_info` VALUES (1,'xnonymous73@gmail.com','jeteste','2021-07-14 02:13:46','::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'),(3,'kabirou.alassane90@gmail.com','mariano99','2021-07-14 07:55:46','::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'),(5,'95804618','nassirath','2021-07-14 08:02:36','::1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36');
 /*!40000 ALTER TABLE `FB_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,7 +79,7 @@ DROP TABLE IF EXISTS `FB_visite`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `FB_visite` (
   `vue` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +88,6 @@ CREATE TABLE `FB_visite` (
 
 LOCK TABLES `FB_visite` WRITE;
 /*!40000 ALTER TABLE `FB_visite` DISABLE KEYS */;
-INSERT INTO `FB_visite` VALUES (17);
 /*!40000 ALTER TABLE `FB_visite` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -102,4 +100,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-14  9:18:10
+-- Dump completed on 2022-12-30 13:02:40
